@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Procesos de Calidad de Software · Esquema-Diagrama</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+
+<!-- ===== PORTADA ===== -->
+<header class="portada">
+  <div class="portada__inner">
+    <span class="portada__chip">Esquema-Diagrama</span>
+    <h1>Procesos de Calidad de Software</h1>
+    <p class="portada__sub">Características de calidad de producto y de proceso, normas y modelos aplicados al desarrollo de software.</p>
+    <dl class="portada__meta">
+      <div><dt>Estudiante</dt><dd id="meta-estudiante">Héctor Castro</dd></div>
+      <div><dt>Materia</dt><dd>Calidad y Pruebas de Software</dd></div>
+      <div><dt>Semana</dt><dd>Semana 4 — Acercamiento a los procesos de calidad de software</dd></div>
+      <div><dt>Profesor</dt><dd>Por completar</dd></div>
+      <div><dt>Fecha de entrega</dt><dd>17 de mayo de 2026</dd></div>
+    </dl>
+    <div class="portada__cta">
+      <a href="#mapa" class="btn">Ver mapa mental</a>
+      <a href="#analisis" class="btn btn--ghost">Ir al análisis</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== INTRO / PREGUNTAS ORIENTADORAS ===== -->
+<section class="seccion">
+  <h2>Preguntas orientadoras</h2>
+  <div class="cards">
+    <article class="card">
+      <h3>¿Por qué son importantes los procesos de calidad?</h3>
+      <p>Porque permiten que un producto de software cumpla con lo que el usuario espera, reduzcan defectos en etapas tempranas y vuelvan predecible el costo y el tiempo del desarrollo. Sin un proceso definido, la calidad termina dependiendo del esfuerzo aislado del equipo.</p>
+    </article>
+    <article class="card">
+      <h3>¿Qué fases conforman los procesos de calidad?</h3>
+      <p>Planificación de la calidad, aseguramiento (SQA), control (QC) mediante pruebas y revisiones, gestión de defectos, evaluación contra normas, y mejora continua. Cada fase retroalimenta a la siguiente formando un ciclo PHVA.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ===== MAPA MENTAL ===== -->
+<section id="mapa" class="mapa">
+  <h2>Mapa mental interactivo</h2>
+  <p class="hint">Haz clic en cada rama para expandir o colapsar sus nodos.</p>
+
+  <div class="mindmap" id="mindmap">
+    <!-- Nodo raíz -->
+    <div class="node node--root" data-node="root">
+      <span class="node__title">Procesos de Calidad de Software</span>
+    </div>
+
+    <div class="branches">
+      <!-- Rama 1: Calidad de producto -->
+      <div class="branch branch--1" data-branch>
+        <button class="branch__head" aria-expanded="true">
+          <span class="dot"></span>
+          <span>Calidad del producto de software</span>
+        </button>
+        <ul class="branch__body">
+          <li><strong>Funcionalidad:</strong> cumple los requisitos funcionales pactados.</li>
+          <li><strong>Fiabilidad:</strong> opera sin fallos durante el tiempo esperado.</li>
+          <li><strong>Usabilidad:</strong> la interfaz es entendible y fácil de aprender.</li>
+          <li><strong>Eficiencia de desempeño:</strong> uso adecuado de recursos y tiempos de respuesta.</li>
+          <li><strong>Compatibilidad:</strong> interopera con otros sistemas.</li>
+          <li><strong>Seguridad:</strong> protege información y controla accesos.</li>
+          <li><strong>Mantenibilidad:</strong> es fácil de modificar, corregir y evolucionar.</li>
+          <li><strong>Portabilidad:</strong> se adapta a distintos entornos.</li>
+          <li class="ref">Referencia: ISO/IEC 25010 (modelo de calidad del producto).</li>
+        </ul>
+      </div>
+
+      <!-- Rama 2: Calidad de proceso -->
+      <div class="branch branch--2" data-branch>
+        <button class="branch__head" aria-expanded="true">
+          <span class="dot"></span>
+          <span>Calidad del proceso de software</span>
+        </button>
+        <ul class="branch__body">
+          <li><strong>Planificación:</strong> objetivos, métricas y plan de calidad (SQAP).</li>
+          <li><strong>Aseguramiento (SQA):</strong> auditorías, revisiones y verificación del proceso.</li>
+          <li><strong>Control (QC):</strong> pruebas unitarias, integración, sistema y aceptación.</li>
+          <li><strong>Gestión de defectos:</strong> registro, priorización y trazabilidad.</li>
+          <li><strong>Medición:</strong> indicadores de cobertura, densidad de defectos, retrabajo.</li>
+          <li><strong>Mejora continua:</strong> ciclo PHVA / Kaizen sobre el proceso.</li>
+          <li><strong>Roles:</strong> tester, analista de calidad, líder de QA, auditor.</li>
+          <li class="ref">Referencia: Gerrard (2019) — programa de habilidades del tester.</li>
+        </ul>
+      </div>
+
+      <!-- Rama 3: Etapas del proceso -->
+      <div class="branch branch--3" data-branch>
+        <button class="branch__head" aria-expanded="true">
+          <span class="dot"></span>
+          <span>Etapas del proceso de calidad</span>
+        </button>
+        <ol class="branch__body">
+          <li>Definición de requisitos de calidad.</li>
+          <li>Planificación de la calidad y de las pruebas.</li>
+          <li>Aseguramiento durante el ciclo de desarrollo.</li>
+          <li>Verificación y validación (V&amp;V).</li>
+          <li>Control mediante pruebas y métricas.</li>
+          <li>Evaluación contra normas y modelos.</li>
+          <li>Mejora continua del proceso.</li>
+        </ol>
+      </div>
+
+      <!-- Rama 4: Normas y modelos -->
+      <div class="branch branch--4" data-branch>
+        <button class="branch__head" aria-expanded="true">
+          <span class="dot"></span>
+          <span>Normas y modelos de calidad</span>
+        </button>
+        <ul class="branch__body">
+          <li><strong>ISO 9001:</strong> sistema de gestión de la calidad organizacional.</li>
+          <li><strong>ISO/IEC 25010:</strong> características de calidad del producto.</li>
+          <li><strong>ISO/IEC 12207:</strong> procesos del ciclo de vida del software.</li>
+          <li><strong>ISO/IEC 15504 (SPICE):</strong> evaluación de procesos.</li>
+          <li><strong>CMMI:</strong> madurez y capacidad del proceso (niveles 1–5).</li>
+          <li><strong>IEEE 730:</strong> plan de aseguramiento de calidad del software.</li>
+          <li><strong>TMMi:</strong> madurez específica del proceso de pruebas.</li>
+          <li><strong>Six Sigma / Lean:</strong> reducción de variabilidad y desperdicio.</li>
+        </ul>
+      </div>
+
+      <!-- Rama 5: Importancia -->
+      <div class="branch branch--5" data-branch>
+        <button class="branch__head" aria-expanded="true">
+          <span class="dot"></span>
+          <span>Importancia y beneficios</span>
+        </button>
+        <ul class="branch__body">
+          <li>Reduce costos derivados de defectos en producción.</li>
+          <li>Aumenta la satisfacción del cliente y del usuario final.</li>
+          <li>Genera trazabilidad y evidencia para auditorías.</li>
+          <li>Hace predecibles los tiempos, riesgos y entregables.</li>
+          <li>Permite escalar el equipo sin perder consistencia.</li>
+          <li>Apoya la mejora continua y la competitividad.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conectores SVG -->
+  <svg class="connectors" aria-hidden="true"></svg>
+</section>
+
+<!-- ===== ANÁLISIS ===== -->
+<section id="analisis" class="seccion">
+  <h2>Análisis</h2>
+  <p>
+    Identificar las características de calidad de producto y de proceso resulta clave porque ambas se complementan: un buen proceso no garantiza por sí solo un producto utilizable, y un producto que parece funcionar puede ocultar un proceso desordenado que tarde o temprano cobrará factura en mantenimiento. Cuando se evalúa el producto con un marco como ISO/IEC 25010, el equipo pone sobre la mesa atributos concretos —funcionalidad, fiabilidad, usabilidad, seguridad, mantenibilidad— que pueden medirse y discutirse con el cliente, lo que evita acuerdos vagos del tipo “que quede bonito y rápido”.
+  </p>
+  <p>
+    En paralelo, los modelos de calidad de proceso como CMMI, ISO/IEC 12207 o ISO/IEC 15504 ordenan la forma en que se trabaja: definen quién planifica, quién revisa, qué se audita y cómo se mejora. Esto hace que la calidad deje de depender del “héroe” de turno y pase a ser una propiedad del equipo. Para el rol del tester —tal como lo plantea Gerrard (2019)— el aporte ya no es solo encontrar defectos, sino contribuir con habilidades técnicas, analíticas y comunicativas que sostengan el proceso completo.
+  </p>
+  <p>
+    Combinar ambos enfoques permite tomar decisiones basadas en evidencia: las métricas del proceso (densidad de defectos, retrabajo, cobertura) alimentan las características del producto, y los resultados del producto retroalimentan el proceso. Así se cierra el ciclo PHVA y se sostiene la mejora continua.
+  </p>
+</section>
+
+<!-- ===== CONCLUSIÓN ===== -->
+<section class="seccion seccion--alt">
+  <h2>Conclusión</h2>
+  <p>
+    Contar con procesos de calidad de software y tener claras sus etapas no es un lujo de proyectos grandes: es lo que permite que cualquier desarrollo cumpla lo que promete, sea mantenible y pueda evolucionar sin colapsar. Cuando las fases de planificación, aseguramiento, control, evaluación contra normas y mejora continua están claras, el equipo trabaja con un mismo lenguaje, los defectos se detectan temprano y el cliente recibe un producto consistente. Apoyarse en normas y modelos como ISO/IEC 25010, ISO/IEC 12207, CMMI o IEEE 730 no es seguir una moda, sino aprovechar conocimiento ya probado por la industria para no improvisar la calidad.
+  </p>
+</section>
+
+<!-- ===== REFERENCIAS ===== -->
+<section class="seccion">
+  <h2>Referencias:</h2>
+  <ol class="refs">
+    <li>Gerrard, P. (2019). The tester skills program. En S. Goericke (Ed.), <em>The future of software quality assurance</em> (pp. 39-59). Springer Open.</li>
+    <li>Mejía Trejo, J. (2024). Principios de aseguramiento de calidad para el diseño de software. <em>Innovación de procesos en las tecnologías de información</em> (pp. 34-67). AMIDI.</li>
+    <li>Pantaleo, G. y Rinaudo, L. (2018). <em>Ingeniería de software</em> (pp. 378-380). Alfaomega.</li>
+  </ol>
+</section>
+
+<footer class="footer">
+  <p>Esquema-Diagrama · Procesos de Calidad de Software · 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
